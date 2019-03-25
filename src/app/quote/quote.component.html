@@ -4,7 +4,8 @@
         <ul> <li>{{quote.name}}</li></ul>
        
         <button  (click)='toogleDetails(i)'>Toogle Details</button>
-
+        
+       
         <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
     </div>
   
