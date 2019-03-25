@@ -6,7 +6,6 @@
         <li>{{quote.name}}</li> 
         <button (click)='toogleDetails(i)'>Toogle Details</button>
        
-        <app-goal-details [quote]='quote'></app-quote-details>
+        <app-quote-details [quote]='quote'></app-quote-details>
         </div>
 </ul>
-<p *ngIf='quote.length> 5'>You have too many quotes</p>
