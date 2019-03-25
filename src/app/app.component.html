@@ -2,11 +2,11 @@
 <hr>
 
 <ul>
-    <div *ngFor='let quote of quotes;let i = index>
+    <div *ngFor='let quote of quotes;let i = index'>
         <li>{{quote.name}}</li> 
         <button (click)='toogleDetails(i)'>Toogle Details</button>
        
         <app-goal-details [quote]='quote'></app-quote-details>
         </div>
 </ul>
-<p *ngIf='quotes.length > 5'>You have too many quotes</p>
+<p *ngIf='quote.length> 5'>You have too many quotes</p>
