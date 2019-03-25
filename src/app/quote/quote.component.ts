@@ -6,7 +6,7 @@ import {Quotes} from '../quote';
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
-export class quotesComponent implements OnInit {
+export class quoteComponent implements OnInit {
 
   quote = [
     new Quotes(1,'Sometime we can feel a bit dull in the morning and we need to produce our own sunshine energy','rtyy'),
@@ -18,8 +18,13 @@ export class quotesComponent implements OnInit {
 
   ]
   
-  completeQuotes(isComplete,index){
+  completequote(isComplete,index){
     if (isComplete){
         this.quote.splice(index,1);
         }
       }
+
+      ngOnInit(){
+        
+      }
+    }
