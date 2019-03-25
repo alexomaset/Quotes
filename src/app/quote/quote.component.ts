@@ -6,7 +6,7 @@ import {Quotes} from '../quote';
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
-export class QuoteComponent implements OnInit {
+export class quotesComponent implements OnInit {
 
   quote = [
     new Quotes(1,'Sometime we can feel a bit dull in the morning and we need to produce our own sunshine energy','rtyy'),
@@ -17,13 +17,9 @@ export class QuoteComponent implements OnInit {
     new Quotes(6, 'Be yourself; everyone else is already taken.','ssst'),
 
   ]
-    toogleDetails(index){
-      this.quote[index].showDescription = !this.quote[index].showDescription;
-  }
-
-constructor() { }
-ngOnInit() {
-  }
-
-}
   
+  completeQuotes(isComplete,index){
+    if (isComplete){
+        this.quote.splice(index,1);
+        }
+      }

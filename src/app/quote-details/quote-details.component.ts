@@ -6,16 +6,15 @@ import {Quotes} from '../quote'
   templateUrl: './quote-details.component.html',
   styleUrls: ['./quote-details.component.css']
 })
-export class QuoteDetailsComponent implements OnInit {
+export class QuotesDetailsComponent implements OnInit {
 
   @Input() quote:Quotes;
   @Output() isComplete= new EventEmitter<boolean>();
   constructor() { }
-}
 
-  quotesComplete(complete:boolean){
+  quoteComplete(complete:boolean){
     this.isComplete.emit(complete);
-  ngOnInit() {
+  ngOnInit() 
   }
 
 }
