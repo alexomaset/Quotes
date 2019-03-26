@@ -1,10 +1,11 @@
+<app-quote-form></app-quote-form>
 <h1>My Quotes</h1>
-<ul>
-    <div *ngFor='let quote of quotes;let i = index'>
+    <div *ngFor='let quote of quote;let i = index'>
+        <ul>
         <li id="{{i}}"appStrikethrough>{{quote.name}}</li>
+        
         <button  (click)='toogleDetails(i)'>Toogle Details</button>
-
+            </ul>
     <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
     
     </div>
-</ul>
