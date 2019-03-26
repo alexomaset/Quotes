@@ -1,4 +1,4 @@
-<app-quote-form></app-quote-form>
+
 <h1>My Quotes</h1>
     <div *ngFor='let quote of quote;let i = index'>
         <ul>
@@ -9,3 +9,4 @@
     <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
     
     </div>
+    <app-quote-form></app-quote-form>
