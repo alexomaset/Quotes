@@ -18,10 +18,13 @@ import { QuotesFormComponent } from './quote-form/quote-form.component';
     StrikethroughDirective,
     DateCountPipe,
     QuotesFormComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgModule,
+    AppModule
   ],
   providers: [],
   bootstrap: [AppComponent]
