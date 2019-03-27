@@ -1,5 +1,5 @@
 # Quotes
-###Description
+### Description
 
 This project tests the understanding of angular 7. it enables the user to got through a number of quotes and vote depending on the favorites also see the no of upvotes and downvotes for each quote.
 
@@ -41,7 +41,8 @@ The following are the required inputs:
 * alexomaset711@gmail.com
 * 0727952163
 * alexomaset@github.io
-##Licence and Copyright
+
+## Licence and Copyright
 MIT License
 
 Copyright (c) 2019 Alex Omaset
