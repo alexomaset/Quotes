@@ -1,11 +1,16 @@
 
 <h1>My Quotes</h1>
-    <div *ngFor='let quote of quote;let i = index'>
+    <div *ngFor='let quote of quote;let i = index' class="row">
+        <div class="col-md-2"></div>
+       <div class="card col-md-8">
         <ul>
-        <li id="{{i}}"appStrikethrough>{{quote.description}}</li>
-        
-        <button  (click)='toogleDetails(i)'>Toogle Details</button>
-            </ul>
+            <li id="{{i}}"appStrikethrough>{{quote.description}}</li>
+            
+            <button  (click)='toogleDetails(i)'>Toogle Details</button>
+                </ul>
+       </div>
+       <div class="col-md-2"></div>
+       
     <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
     
     </div>
