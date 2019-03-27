@@ -1,6 +1,10 @@
-<p>{{quote.name}} day ago</p>
-<button class="btn btn-success up" name="up" (click)='upVote()'>Upvote{{upvote}}</button>
-
-   <button class="btn btn-warning down" name="down" (click)='downVote()'>DownVoteUpvote{{downvote}}</button>
- 
-<button class="btn btn-danger btn-lg" (click)='deleteQuote(true)'>Delete</button>
+<div id="details">
+    <div class="col-md-2"></div>
+    <div class="col-md-8"><p>{{quote.name}} day ago</p>
+        <button class="btn btn-success up" name="up" (click)='upVote()'>Upvote{{upvote}}</button>
+        
+           <button class="btn btn-warning down" name="down" (click)='downVote()'>DownVoteUpvote{{downvote}}</button>
+         
+        <button class="btn btn-danger btn-lg" (click)='deleteQuote(true)'>Delete</button></div>
+        <div class="col-md-2"></div>
+</div>
