@@ -1,26 +1,50 @@
 # Quotes
+###Description
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+This project tests the understanding of angular 7. it enables the user to got through a number of quotes and vote depending on the favorites also see the no of upvotes and downvotes for each quote.
 
-## Development server
+## Author
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Alex Omaset
 
-## Code scaffolding
+## Set Up Requirements
+*For the application to run you must have NPM and Angular installed.
+*Bootsrap is also required for styling and design of the main page.
+ Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Build and Specifications
+The following are the specifications for this application:
 
-## Build
+*INPUT
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The application accepts 4 inputs with the user being able to enter only 3 of the required inputs.
 
-## Running unit tests
+*INPUT TYPE
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The following are the required inputs:
 
-## Running end-to-end tests
+1 A Quote (Entered into the text area).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+2 The author of the Quote.
+
+3 Name of the user uploading the Quote.
+
+4 The date the Quote is submitted.(Hidden input).
+
+## Technologies Used
+   * Angular 7
+   * Bootstrap
+   * NPM
+
+## Contacts
+
+* alexomaset711@gmail.com
+* 0727952163
+* alexomaset@github.io
+##Licence and Copyright
+MIT License
+
+Copyright (c) 2019 Alex Omaset
 
 ## Further help
 
